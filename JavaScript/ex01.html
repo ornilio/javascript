@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="arjava.js"></script>
+    
+</head>
+<body>
+        
+
+    <h1>Todos os Exercicios!</h1>
+    
+    <div id="al1">
+       <div id="al1int"> Somando Valores</div>
+
+    
+
+       <input type="number" id="n1">+
+       <input type="number" id="n2">
+       <input type="button" value="Somar" onclick="somar()">
+       <br>
+       <br>
+       <div id="resu">Resutado</div>
+
+
+       <script>
+            function somar(){
+        var n1= window.document.querySelector('input#n1')
+        var n2= window.document.querySelector('input#n2')
+        var resu= window.document.querySelector('div#resu')
+        var for1= Number(n1.value)
+        var for2= Number(n2.value)
+        var soma= for1+for2
+
+        resu.innerHTML= (`Ola a soma entre${for1} e ${for2} é ${soma}.`)
+            }
+        </script>
+        </div>
+        <br>
+
+        <div id="al2">
+            <div id="al2int"> Verificadores, if e else</div>
+
+            <input type="text" name="cidade" id="pais">
+            <input type="button" value="Verifiar" onclick="verificar()">
+            <div id="res">Resultado</div>
+            
+            <script>
+                function verificar(){
+                    var cid= window.document.querySelector('input#pais')
+                    var res= window.document.querySelector('div#res')
+                    if(cid == 'brasil'){
+                        res.innerHTML= ('Ola, você é um cidadão dos Estados Unidos da America')
+                    }else{
+                        res.innerHTML= ('Ola, você é um visitante, derija-se ao setor de indetificação,obrigado!')
+                    }
+                }
+            </script>
+            <div id="al2dr">
+                <input type="number" id="ndr1">
+                <input type="button" value="Consultar" onclick="consultar()">
+                <div id="resul">Resultado</div>
+                <script>
+                    function consultar(){
+                        var ndr= window.document.querySelector('input#ndr1')
+                        var ndrr= Number(ndr.value)
+                        var resul= window.document.querySelector('div#resul')
+                        if(ndrr > '80'){
+                                resul.innerHTML= (`Sua velocidae é ${ndrr} Km/hr<br> e voce será multado por execo de velocidade`)
+                            }else if(ndrr < '40'){
+                                resul.innerHTML= (`Sua velocidade é ${ndrr} Km/hr<br> a velocidade minima é de 40 Km/hr!`)
+                            }else{
+                               resul.innerHTML=(`Sua velocidade é ${ndrr} Km/hr<br> use sempre o cinto de segurança!`)
+                            }
+
+                    }
+                    
+                </script>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div id="al3">
+                <div id="al3int"> Funçoes de horas e datas e switch</div>
+    
+                
+                <script>
+                        var hr= new Date()
+                        var h= hr.getHours()
+                        var min= new Date()
+                        var m= min.getMinutes()
+                        var dia= new Date()
+                        var d= dia.getDate()
+                        var mes= new Date()
+                        var me= mes.getMonth()
+                        var ano= new Date()
+                        var a= ano.getFullYear()
+                        
+
+                        switch(me){
+                            case 0:
+                            document.write(`${h}:${m} <br> ${d} de Janeiro de ${a}`)
+                            break
+                            case 1:
+                            document.write(`${h}:${m} <br> ${d} de Fevereiro de ${a}`)
+                            break
+                            case 2:
+                            document.write(`${h}:${m} <br> ${d} de Março de ${a}`)
+                            break
+                            case 3:
+                            document.write(`${h}:${m} <br> ${d} de Abril de ${a}`)
+                            break
+                            case 4:
+                            document.write(`${h}:${m} <br> ${d} de Maio de ${a}`)
+                            break
+                            case 5:
+                            document.write(`${h}:${m} <br> ${d} de Junho de ${a}`)
+                            break
+                            case 6:
+                            document.write(`${h}:${m} <br> ${d} de Julho de ${a}`)
+                            break
+                            case 7:
+                            document.write(`${h}:${m} <br> ${d} de Agosto de ${a}`)
+                            break
+                            case 8:
+                            document.write(`${h}:${m} <br> ${d} de Setembro de ${a}`)
+                            break
+                            case 9:
+                            document.write(`${h}:${m} <br> ${d} de Outubro de ${a}`)
+                            break
+                            case 10:
+                            document.write(`${h}:${m} <br> ${d} de Novembro de ${a}`)
+                            break
+                            case 11:
+                            document.write(`${h}:${m} <br> ${d} de Dezembro de ${a}`)
+                            break
+                            default:
+                                document.write('Erro')
+                        }
+                       
+                        
+                    </script>
+                   
+                    
+    
+            </div>
+            <br>
+
+            <div id="al4">
+                <div id="al4int">Tipos de Input</div> <br>
+                   cor <input type="color" name="" id="">
+                   senha <input type="password">
+                   data <input type="date">
+                   dat e tempo <input type="datetime">
+                    data e hora<input type="datetime-local">
+                    <input type="range">
+                    semana <input type="week">
+                   mes <input type="month" name="" id="">
+                   eamil <input type="email" name="" id="">
+                   numero <input type="number" name="" id="">
+                   pesquisa <input type="search" name="" id="">
+                   telefone <input type="tel">
+                   tempo <input type="time" name="" id="">
+                   url <input type="url">
+                    
+
+
+                    </div>
+</body>
+</html>
